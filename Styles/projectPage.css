@@ -6,13 +6,20 @@
     min-height: 100vh;
     max-width: 70%;
     background-color: #FFF;
-    margin: 0;
+	color: #000;
     padding-top: 5vw;
     border-radius: 2rem;
+	text-align: center;
 }
 
 .Container .Header h1
 {
     color: #000000;
+}
+
+.ImageContainer
+{
+	justify-content: center;
+	align-items: center;
 }
 

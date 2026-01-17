@@ -1,15 +1,13 @@
-
 .CircleContainer
 {
     display: flex;
     flex-flow: row wrap;
     background: linear-gradient(360deg, #555555, #FFFFFF);
     border-radius: 4rem;
-    //box-shadow: 4px 4px 4px 8px #FFFFF1;
     min-width: 80%;
     min-height: 22vw;
     justify-content: flex-start;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .CircleTwo
