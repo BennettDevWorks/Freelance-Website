@@ -19,3 +19,11 @@
 	align-items: center;
 	min-height: 30vh;
 }
+
+.FeaturedContracts
+{
+	display: flex; flex-flow: column nowrap;
+	background-color: #FFF;
+	color: #000;
+	clip-path: polygon(0 50px, 100% 0, 100% 100%, 0% 100%);
+}
