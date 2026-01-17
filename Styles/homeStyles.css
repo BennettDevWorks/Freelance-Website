@@ -15,15 +15,36 @@
 .AboutUs
 {
 	display: flex; flex-flow: column nowrap;
+	font-size: 1.5rem;
 	justify-content: center;
 	align-items: center;
-	min-height: 30vh;
+	min-height: 100vh;
+	min-width: 100%;
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+	background-color: #FFF;
+	color: #000;
 }
 
 .FeaturedContracts
 {
 	display: flex; flex-flow: column nowrap;
+	font-size: 1.5rem;
+	justify-content: flex-start;
+	align-items: center;
+	#background-color: #FFF;
+	color: #FFF;
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+	min-width: 100%;
+	min-height: 90vh;
+	#box-shadow: 0 4px 8px #3d2a5c;
+	padding-top: 5vh;
+}
+
+.EmptyWhiteDiv
+{
+	display: flex; flex-flow: column nowrap;
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 	background-color: #FFF;
-	color: #000;
-	clip-path: polygon(0 50px, 100% 0, 100% 100%, 0% 100%);
+	min-height: 100vh;
+	min-width: 100%;
 }
