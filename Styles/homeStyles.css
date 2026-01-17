@@ -44,11 +44,15 @@
 	margin-right: 2vh;
 }
 
-.EmptyWhiteDiv
+.InHouseSystems
 {
 	display: flex; flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 	background-color: #FFF;
+	color: #000;
+	font-size: 1.5rem;
 	min-height: 100vh;
 	min-width: 100%;
 }
