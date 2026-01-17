@@ -2,6 +2,7 @@
 .TextCard
 {
     display: flex; flex-flow: column nowrap;
+	fontSize: 1.5rem;
     min-height: 25vh;
     min-width: 20vh;
     align-items: center;
