@@ -11,3 +11,10 @@
     background-size: cover;
     background-position: center;
 }
+
+.AboutUs
+{
+	display: flex; flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
