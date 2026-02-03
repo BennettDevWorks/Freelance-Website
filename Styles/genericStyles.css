@@ -58,7 +58,7 @@ a
     #background-color: #FFFFFF;
     z-index: 50;
 }
-.CircleOne, .CircleTwo, .CircleThree
+.CircleOne, .CircleTwo, .CircleThree, .CircleFour
 {
     display: flex; flex-flow: column nowrap;
 	font-weight: 700;
@@ -74,7 +74,7 @@ a
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-.CircleOne:hover, .CircleTwo:hover, .CircleThree:hover
+.CircleOne:hover, .CircleTwo:hover, .CircleThree:hover, .CircleFour:hover
 {
     transform: translateX(var(--offsetX)) scale(1.1);
     #transition: transform 0.3s ease;
@@ -84,22 +84,30 @@ a
 
 .CircleOne
 {
-    --offsetX: 110%;
+    --offsetX: 160%;
     transform: translateX(var(--offsetX));
     z-index: 6;
 }
 .CircleTwo
 {
     background-color: #1A1A1A;
-    --offsetX: 0%;
+    --offsetX: 55%;
+	transform: translateX(var(--offsetX));
     z-index: 4;
 }
 .CircleThree
 {
     background: linear-gradient(135deg, #3A3A3A, #1A1A1A);
-    --offsetX: -110%;
+    --offsetX: -160%;
     transform: translateX(var(--offsetX));
     z-index: 2;
+}
+.CircleFour
+{
+	background-color: #000;
+    --offsetX: -55%;
+    transform: translateX(var(--offsetX));
+    z-index: 6;
 }
 
 .ImageContainer

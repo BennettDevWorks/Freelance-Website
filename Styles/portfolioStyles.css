@@ -19,6 +19,15 @@
     position: static;
     margin: 1vw;
     background: linear-gradient(135deg, #1A1A1A, #7A7A7A);
+	--offsetX: -55%;
+	transform: translate(var(--offset));
+}
+.CircleTwo:hover
+{
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
+	box-shadow: 0 4px 8px #FFF;
+	z-index: 8;
 }
 
 .CircleTwo:has(img) img
