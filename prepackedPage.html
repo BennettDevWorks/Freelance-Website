@@ -14,16 +14,17 @@
 	</script>
 	<link rel="stylesheet" href="Styles/genericStyles.css">
 	<link rel="stylesheet" href="Styles/prepackedStyles.css">
+	<script src="Scripts/prepackaged.js" defer></script>
 </head>
 <body>
 	<div class="Container">
 		<div class="ContactBar">
-			<a href="">Github</a>
-			<a href="">Contact</a>
-			<a href="">BennettDevWorks</a>
-			<a href="">Portfolio</a>
-			<a href="">Projects</a>
-			<a href="">Linkedin</a>
+			<a href="https://github.com/ChrisBennett909">Github</a>
+			<a href="contactPage.html">Contact</a>
+			<a href="index.html">BennettDevWorks</a>
+			<a href="portfolioPage.html">Portfolio</a>
+			<a href="projectPage.html">Projects</a>
+			<a href="https://www.linkedin.com/in/bennettdevworks">Linkedin</a>
 		</div>
 
 		<div class="Header">
@@ -32,35 +33,15 @@
 			</h1>
 		</div>
 
-		<div class="OfferContainer">
-			<div class="Offer">
-				<h3>App</h3> 
-			</div>
+		<div class="OfferToggle">
+			<span id="toggleLabel">Website</span>
+			<label class="switch">
+				<input type="checkbox" id="offerToggle">
+				<span class="slider round"></span>
+			</label>
+		</div>
 
-			<div class="Offer">
-				<h3>Website</h3>
-
-				<div class="OfferTeir">
-					<p>Basic(£500)</p>
-					<p>
-					Getting yourself out there<br>A splash website getting yourself out there and telling the world who you are and how to contact you with your own person design.
-					</p>
-				</div>
-
-				<div class="OfferTeir">
-					<p>Premium Teir(£1,000)</p>
-					<p>
-						A Main website with more complexities like a shop for your products or services but limits on amount of proudcts in the shop.
-					</p>
-				</div>
-
-				<div class="OfferTeir">
-					<p>Flagship(£2,000)</p>
-					<p>
-						Your flagship website showing you own your industry with all your products and services on show for purchase and all the pages you could need for you and you customers.
-					</p>
-				</div>
-			</div>
+		<div class="OfferContainer" id="OfferContainerID">
 		</div>
 	</div>
 </body>

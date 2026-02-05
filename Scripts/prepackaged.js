@@ -1,5 +1,5 @@
 const offerToggle = document.getElementById('offerToggle');
-const offerGrid = document.getElementById('offerGrid');
+const offerGrid = document.getElementById('OfferContainerID');
 const toggleLabel = document.getElementById('toggleLabel');
 
 
@@ -39,29 +39,45 @@ const appOfferSet = [
 ];
 
 
-function renderOffers(offers){
+function renderOffers(offers, headingText){
 	offerGrid.innerHTML = "";
+
+	const offerDiv = document.createElement("div");
+	offerDiv.className = "Offer";
+
+	const heading = document.createElement("h3");
+	heading.textContent = headingText;
+	offerDiv.appendChild(heading);
+
 	offers.forEach(offer => {
-		const div = document.createElement('div');
-		div.className = 'grid-item';
-		div.innerHTML = `
-			<h3>${offer.title}</h3>
-			<p><strong>${offer.price}</strong></p>
-			<p>${offer.description}</p>
-		`;
-		offerGrid.appendChild(div);
+		const tier = document.createElement("div");
+		tier.className = "OfferTier";
+
+		const title = document.createElement("p");
+		title.innerHTML = `${offer.title} (${offer.price})`;
+
+		const desc = document.createElement("p");
+		desc.innerHTML = offer.description;
+
+		tier.appendChild(title);
+		tier.appendChild(desc);
+
+		offerDiv.appendChild(tier);
 	});
+
+
+	offerGrid.appendChild(offerDiv);
 }
 
 
-renderOffers(websiteOfferSet);
+renderOffers(websiteOfferSet, "Website Offers");
 
-offerToggle.addEventListener('change', () => {
+offerToggle.addEventListener("change", () => {
 	if (offerToggle.checked){
-		renderOffers(appOfferSet);
-		toggleLabel.textContent = "App Offers";
+		renderOffers(appOfferSet, "App Offers");
+		toggleLabel.textContent = "App";
 	} else {
-		renderOffers(websiteOfferSet);
-		toggleLabel.textContent = "Website Offers";
+		renderOffers(websiteOfferSet, "Website Offers");
+		toggleLabel.textContent = "Website";
 	}
 });

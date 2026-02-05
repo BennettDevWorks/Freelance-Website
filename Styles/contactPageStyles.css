@@ -14,8 +14,8 @@
     padding-left: 2vw;
     padding-right: 2vw;
     border-radius: 5rem;
-    background: #FFFFFF;
-    color: #2A2A2A;
+    background: #3d2a5c;
+    color: #FFF;
 }
 
 .TextCard input, .TextCard textarea, .TextCard button
@@ -24,5 +24,6 @@
     margin-top: 1vw;
     margin-bottom: 1vw;
 	font-size: 1.5rem;
+	border-radius: 3rem;
 }
 

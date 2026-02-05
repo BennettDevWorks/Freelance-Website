@@ -1,7 +1,7 @@
 .OfferContainer
 {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -11,15 +11,79 @@
     display: flex;
 	flex-flow: column;
 	align-items: center;
-	min-width: 100%;
+	align-self: center;
+	justify-self: center;
+	min-width: 60%;
+	max-width: 80%;
 	border: 3px solid #000;
 }
 
-.OfferTeir
+.OfferTier
 {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: space-around;
 	gap: 3rem;
 	margin-left: 2rem;
+	margin-right: 2rem;
+	border-top: 1px solid #000;
+}
+
+.switch
+{
+	position: relative;
+	display: inline-block;
+	width: 3rem;
+	height: 1.5rem;
+	margin-left: 0.5rem;
+}
+
+.switch input
+{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider
+{
+	position: absolute;
+	cursor: pointer;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 1rem;
+}
+
+.slider:before
+{
+	position: absolute;
+	content: "";
+	height: 1.2rem;
+	width: 1.2rem;
+	left: 2px;
+	bottom: 0.15rem;;
+	background-color: #000;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider
+{
+	background-color: #2196F3;
+}
+
+input:checked + .slider:before
+{
+	transform: translate(1.5rem);
+}
+
+.slider.round
+{
+	border-radius: 1.5rem;
+}
+
+.slider.round:before
+{
+	border-radius: 50%;
 }
