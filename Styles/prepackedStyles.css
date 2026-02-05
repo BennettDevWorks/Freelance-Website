@@ -1,0 +1,25 @@
+.OfferContainer
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+	margin: 0 auto;
+}
+
+.Offer
+{
+    display: flex;
+	flex-flow: column;
+	align-items: center;
+	min-width: 100%;
+	border: 3px solid #000;
+}
+
+.OfferTeir
+{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: space-around;
+	gap: 3rem;
+	margin-left: 2rem;
+}
