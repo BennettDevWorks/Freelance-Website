@@ -90,14 +90,15 @@ a
 }
 .CircleTwo
 {
-    background-color: #1A1A1A;
+    background-color: #000;
     --offsetX: 55%;
 	transform: translateX(var(--offsetX));
     z-index: 4;
 }
 .CircleThree
 {
-    background: linear-gradient(135deg, #3A3A3A, #1A1A1A);
+    #background: linear-gradient(135deg, #3A3A3A, #1A1A1A);
+	background-color: #000;
     --offsetX: -160%;
     transform: translateX(var(--offsetX));
     z-index: 2;
